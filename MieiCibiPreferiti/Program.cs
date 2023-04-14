@@ -24,9 +24,12 @@ printArrayString(arrayMyFavoriteFood);
 Console.WriteLine();
 
 Console.Write("Il mio cibo top è: ");
-getFirstFavFood(arrayMyFavoriteFood);
+Console.WriteLine(arrayMyFavoriteFood[0]);
 
+Console.Write("Il mio cibo preferito, ma non troppo è: ");
+Console.WriteLine(arrayMyFavoriteFood[5]);
 
+ printFirstElementArrayString(arrayMyFavoriteFood);
 
 // FUNZIONI ------------------------------------------------------
 
@@ -43,12 +46,30 @@ void printArrayString(string[] arrayString)
     }
 }
 
+
+
+
+void printFirstElementArrayString(string[] arrayString)
+{
+    for (int i = 0; i == arrayString.Length; i++)
+    {
+        Console.WriteLine(arrayString[0]);
+    }
+}
+
+
+
+
+
+
+
+
+/*
 void getFirstFavFood(string[] firstFood) {
     for (int i = 0; i < firstFood.Length; i++)
     {
-        if (i == 0) {
-            Console.WriteLine();
-        }
+        Console.WriteLine(firstFood);
     }
     
 }
+*/
